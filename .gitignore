@@ -1,0 +1,5 @@
+#Ignore files from the project
+.DS_Store
+.vscode
+.env
+
