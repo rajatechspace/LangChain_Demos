@@ -7,6 +7,21 @@ import os
 load_dotenv('./.env')
 
 
+def add_numbers(a:int, b:int) -> int:
+    "Add two numbers and return results."
+    return int(a) + int(b)
+
+
+def subract_numbers(a:int, b:int) -> int:
+    "Subtract two numbers and return results."
+    return int(a) + int(b)
+
+
+def multiply_numbers(a:int, b:int) -> int:
+    "multiply two numbers and return results."
+    return int(a) + int(b)
+
+
 def get_weather(city: str) -> dict:
     """Retrieves the current weather report for a specified city.
 
@@ -68,5 +83,5 @@ root_agent = Agent(
     instruction=(
         "I can answer your questions about the time and weather in a city."
     ),
-    tools=[get_weather, get_current_time],
+    tools=[get_weather, get_current_time, add_numbers, subract_numbers, multiply_numbers],
 )
