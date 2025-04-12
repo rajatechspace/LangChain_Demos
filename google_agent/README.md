@@ -1,12 +1,13 @@
-# Google Weather & Time Agent
+# Google Weather, Time & Calculator Agent
 
-A simple agent built with Google's Agent Development Kit (ADK) that can answer questions about weather and time for specific cities.
+A simple agent built with Google's Agent Development Kit (ADK) that can answer questions about weather and time for specific cities, as well as perform basic math operations.
 
 ## Overview
 
 This project implements a conversational agent using Google's Gemini model that can:
 - Provide weather information for a city
 - Tell the current time in a city
+- Perform basic math operations (addition, subtraction, multiplication)
 
 Currently, the agent is set up to handle queries for New York, but it can be extended to support additional locations.
 
@@ -55,12 +56,19 @@ print(response)
 # Or for time queries
 response = root_agent.run("What time is it in New York?")
 print(response)
+
+# For math operations
+response = root_agent.run("What is 15 + 27?")
+print(response)
+response = root_agent.run("Multiply 8 and 12")
+print(response)
 ```
 
 ## Features
 
 - **Weather Information**: Get current weather conditions for supported cities
 - **Time Information**: Get current local time for supported cities
+- **Math Operations**: Perform basic calculations like addition, subtraction, and multiplication
 - **Extensible**: Easy to add support for more cities and additional functionalities
 
 ## Project Structure
@@ -78,4 +86,4 @@ Currently, the agent only has hardcoded data for New York. To add support for mo
 
 ## License
 
-[MIT License](LICENSE) 
+[MIT License](LICENSE)
