@@ -14,12 +14,12 @@ def add_numbers(a:int, b:int) -> int:
 
 def subract_numbers(a:int, b:int) -> int:
     "Subtract two numbers and return results."
-    return int(a) + int(b)
+    return int(a) - int(b)
 
 
 def multiply_numbers(a:int, b:int) -> int:
     "multiply two numbers and return results."
-    return int(a) + int(b)
+    return int(a) * int(b)
 
 
 def get_weather(city: str) -> dict:
